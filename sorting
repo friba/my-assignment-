@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  int num[8];
+  int a,b,c;
+  for (a=0;a<=7;a++)
+  {
+
+
+    cout << "please enter your number :";
+    cin >> num [a];
+  }
+
+  for (a=0;a<=7;a++)
+  {
+      for (b=a+1;b<=7;b++)
+  {
+      if (num [a]> num [b])
+
+  {
+      c=num[a];
+      num [a]=num[b];
+      num[b]=c;
+  }
+
+     }
+  }
+  for (a=0;a<=7;a++)
+  {
+      cout <<"\t"<< num[a]<<endl;
+  }
+
+    return 0;
+}
