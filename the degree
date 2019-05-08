@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+void getScore (int& score);
+void printGrade (int score);
+int main()
+
+{
+    int courseScore;
+    cout << "course grade.\n";
+
+    getScore(courseScore);
+    printGrade(courseScore);
+    return 0;
+}
+
+void printGrade(int score)
+{
+    cout <<"your grade for the score is :\t";
+    if (score>=90)
+        cout << "A."<<endl;
+    else if ( score >=80)
+        cout <<"B"<< endl;
+    else if (score>70)
+        cout << "C"<<endl;
+    else if(score>=60)
+        cout <<"D"<<endl;
+        else
+            cout <<"F"<<endl;
+
+}
+void getScore (int& score)
+{
+cout <<"Enter course score:";
+cin >>score;
+cout <<"your score is:\t"<<score<< endl;
+}
